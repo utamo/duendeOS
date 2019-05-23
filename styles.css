@@ -24,7 +24,7 @@ body {
     width: 1280px;
     height: 720px;
     display: grid;
-    background: url(imgs/background.png);
+    background: url('http://wallup.net/wp-content/uploads/2016/05/27/181127-Minecraft-lava-water-Sun-sea.png');
     grid-template-areas: 
         "header"
         "middle"
@@ -66,7 +66,7 @@ body {
 }
 .righticons {
     display: flex;
-    cursor: pointer;
+    
 }
 .righticons img, p {
     margin-right: 0.5rem;
@@ -134,17 +134,19 @@ body {
     transform: scale(1.05);
 }
 #meiok {
-    box-shadow: 1px 2px 11px rgba(0, 147, 255, 0.08);
+    box-shadow: 1px 2px 11px rgba(87, 140, 211, 0.14);
     margin: 0.5rem 0rem 0rem 0rem;
-    border-radius: 30%;
-    transition: box-shadow 1s ease-in;
+    border-radius: 60%;
+    transition: all 1s ease-in;
+    filter: invert(9%)
     
 
 }
 #meiok:hover {
-    box-shadow: 1px 2px 11px rgba(0, 147, 255, 0.51);
+    box-shadow: 1px 2px 11px rgba(255, 0, 0, 0.51);
     margin: 0.5rem 0rem 0rem 0rem;
-    border-radius: 30%;
+    border-radius: 50%;
+    filter: invert(100%);
 
 }
 
