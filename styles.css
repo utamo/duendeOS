@@ -19,17 +19,19 @@ body {
     align-items: center;
     align-content: center;
     height: 100vh;
+    background: red;
 }
 .grid-container {
-    width: 1280px;
-    height: 720px;
+    height: 100%;
+    width: 100%;
     display: grid;
     background: url(imgs/background.png);
     grid-template-areas: 
         "header"
         "middle"
         "footer";
-    grid-template-rows: 20px 640px 60px;
+    
+    grid-template-rows: 20px 90vh ;
     
     background-repeat: no-repeat;
     background-size:cover;
@@ -78,13 +80,14 @@ body {
     position: absolute;
 }
 
-.terminal {
+.application {
     position: absolute;
     top: 80px;
     left: 180px;
 }
 /* Parte de cima do terminal */
-.encima {
+.titleBar {
+    color: white;
     height: 12px;
     width: 400px;
     background: rgba(13, 9, 29, 0.88);
@@ -94,15 +97,15 @@ body {
     padding: .2rem;
     cursor: pointer;
 }
-#fecha {
+.fecha {
     height: 8px;
 }
-#fechar {
+.fechar {
     color: white;
     margin: .2rem;
 }
 /* Parte debaixo do terminal */
-.baixo {
+.appBox {
     height: 300px;
     width: 400px;
     background: rgba(0, 0, 0, 0.66);
