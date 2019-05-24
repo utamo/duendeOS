@@ -13,5 +13,9 @@ class App {
 		this.elements.headerDiv = document.createElement("div")
 		this.elements.headerDiv.className = "encima" // rename this class to something more descriptive in english
 		this.elements.windowDiv.appendChild(this.elements.headerDiv)
+
+		this.elements.contentDiv = document.createElement("div")
+		this.elements.contentDiv.className = "baixo"
+		this.elements.windowDiv.appendChild(this.elements.contentDiv)
 	}
 }
