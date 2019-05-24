@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: monospace;
     transition: filter 1s ease-in;
+    user-select: none;
+
 }
 .blur {
       filter: blur(4px);
