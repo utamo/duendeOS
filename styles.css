@@ -112,7 +112,7 @@ body {
     width: 400px;
     background: rgba(0, 0, 0, 0.66);
 }
-#root {
+.root {
     color: forestgreen;
     font-size: 0.7rem;
     padding: 0.2rem;

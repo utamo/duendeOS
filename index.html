@@ -6,6 +6,7 @@
     <title>mutamoOS</title>
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
     <script src="js/app.js"></script>
+    <script src="js/terminalApp.js"></script>
 </head>
 <body>
    <div class="container">
@@ -23,16 +24,6 @@
             </div>
         </div>
         <div id="desktop" class="meio">
-            <!--<div class="terminal">
-                <div class="encima">
-                  <p id='fechar'>-</p>
-                   <img id='fecha' src="imgs/17-512.png">
-                    <img id='fecha' src="imgs/close_black_256x256.png">;
-                </div>
-                <div class="baixo">
-                    <h1 id="root">mutanoOS@root~$:mors omnibus▮ </h1>
-                </div>
-            </div>-->
         </div>
         <div class='footer'>
             <div class="esquerda">
@@ -52,11 +43,10 @@
         </div>
     </div>
    </div>
-    
     <script>
         let desktop = document.getElementById("desktop")
-        let chromeApp = new App("Chrome")
-        chromeApp.drawWindow(desktop)
+        let terminalApp = new Terminal()
+        terminalApp.drawWindow(desktop)
     </script>
 </body>
 </html>
